@@ -1,0 +1,17 @@
+<section class="card m-auto my-5">
+    <section class="card-body">
+        <form [formGroup]="loginForm" (ngSubmit)="formSubmit()">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    placeholder="Enter email" formControlName="username">
+
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" formControlName="pwd">
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        </form>
+    </section>
+</section>
